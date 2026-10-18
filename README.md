@@ -138,6 +138,6 @@ The backend supports file uploads up to **75 MB per file**.
 ## 👨‍💻 Author
 
 **Vikram Kushwaha**  
-Computer Science and Engineering Student
+Computer Science and Engineering
 
 ---
