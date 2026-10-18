@@ -6,7 +6,9 @@ import Footer from "./components/Footer";
 import JoinCard from "./components/JoinCard";
 import ShareBoard from "./components/ShareBoard";
 
-const socket = io("http://localhost:5000");
+const BACKEND_URL = "https://blinkshare-backend-1x4h.onrender.com";
+const socket = io(BACKEND_URL);
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -242,9 +244,9 @@ function App() {
 
       try {
         const res =
-          await fetch(
-            "http://localhost:5000/upload",
-            {
+         await fetch(
+    `${BACKEND_URL}/upload`,
+    {
               method: "POST",
               body: formData
             }
