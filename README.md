@@ -1,23 +1,26 @@
+# ⚡ BlinkShare
 
-# BlinkShare
+### Real-Time Text & File Sharing Across Devices
 
-### Real-Time Text and File Sharing
+**BlinkShare** is a real-time web application that enables users to share text messages and files between devices using a common room code. Built with React, Node.js, Express, and Socket.IO, it provides a simple and responsive way to exchange content across desktop and mobile devices.
 
-BlinkShare is a real-time web application that allows users to share text messages and files between devices using a common room code.
+🔗 **Live Demo:** [https://blinkshare-live.vercel.app/](https://blinkshare-live.vercel.app/)
 
-Built with React, Node.js, Express, and Socket.IO, BlinkShare provides a simple way to connect users and share content in real time.
+---
 
 ## ✨ Features
 
-- **Room-Based Sharing** — Join a room using a room code.
-- **Real-Time Messaging** — Send and receive text messages instantly.
-- **File Sharing** — Upload and share files with users in the same room.
-- **File Access** — Open and download shared files through their links.
-- **Device Name** — Join a room using a device name.
-- **Responsive Interface** — Designed for desktop and mobile screens.
-- **Dark Mode** — Switch between light and dark themes.
+- 🏠 **Room-Based Sharing** — Join a shared room using a room code.
+- 💬 **Real-Time Messaging** — Send and receive text messages instantly.
+- 📁 **File Sharing** — Upload and share files with users in the same room.
+- 🔗 **File Access** — Open and download shared files through their links.
+- 📱 **Device Names** — Identify devices using a chosen device name.
+- 📐 **Responsive Interface** — Works across desktop and mobile screens.
+- 🌙 **Dark Mode** — Switch between light and dark themes.
 
-## 🛠️ Tech Stack
+---
+
+## 🧰 Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -28,8 +31,9 @@ Built with React, Node.js, Express, and Socket.IO, BlinkShare provides a simple 
 | Socket.IO | Real-time communication |
 | Multer | File upload handling |
 
+---
 
-## 📁 Project Structure
+## 🗂️ Project Structure
 
 ```text
 BlinkShare/
@@ -50,28 +54,26 @@ BlinkShare/
 └── README.md
 ```
 
+---
+
 ## 🚀 Getting Started
 
 Follow these steps to run BlinkShare locally.
 
-### Prerequisites
+### 📋 Prerequisites
 
 - [Node.js](https://nodejs.org/)
 - npm
-- [Git](https://git-scm.com/) (for cloning the repository)
+- [Git](https://git-scm.com/)
 
-### 1. Clone the Repository
-
-Replace `vikram9369` with your actual GitHub username.
+### 1. 📥 Clone the Repository
 
 ```bash
 git clone https://github.com/vikram9369/BlinkShare.git
 cd BlinkShare
 ```
 
-### 2. Install and Start the Backend
-
-Open a terminal in the project directory:
+### 2. ⚙️ Start the Backend
 
 ```bash
 cd backend
@@ -79,13 +81,13 @@ npm install
 npm start
 ```
 
-The backend runs on port `5000` by default.
+The backend uses port `5000` by default, or the port configured by the hosting environment.
 
-Keep this terminal running.
+Keep the backend terminal running.
 
-### 3. Install and Start the Frontend
+### 3. 🖥️ Start the Frontend
 
-Open a second terminal in the project directory:
+Open a second terminal from the project root and run:
 
 ```bash
 cd frontend
@@ -93,11 +95,11 @@ npm install
 npm run dev
 ```
 
-Open the local URL displayed in the terminal, usually:
+Open the local URL shown in the terminal, usually:
 
-http://localhost:5173
+[http://localhost:5173](http://localhost:5173)
 
-### 4. Start Sharing
+### 4. 🔄 Start Sharing
 
 1. Open BlinkShare in your browser.
 2. Enter a device name and a room code.
@@ -105,25 +107,37 @@ http://localhost:5173
 4. Join the same room using the same room code.
 5. Send messages or upload files to share them with connected users in that room.
 
+---
+
 ## 📦 File Upload Limit
 
-The backend is configured to accept files up to **75 MB per upload**.
+The backend supports file uploads up to **75 MB per file**.
+
+---
+
+## ☁️ Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Live Application:** [Open BlinkShare](https://blinkshare-live.vercel.app/)
+
+---
 
 ## ⚠️ Current Limitations
 
-- Uploaded files are stored on the backend server's local filesystem.
-- File availability depends on the backend server and its storage.
-- The current frontend and Socket.IO setup uses local development addresses.
-- Additional configuration is required for public deployment.
+- Uploaded files are stored on the backend server's local filesystem and may not persist after a restart or redeployment.
+- File uploads are limited to 75 MB per file.
 
-## 🔮 Future Improvements
+## 🔭 Future Improvements
 
-- Cloud-based file storage
-- Public deployment
-- Improved file management
-- Enhanced security and validation
+- Integrate persistent cloud file storage.
+- Enhance file management and security.
+
+---
 
 ## 👨‍💻 Author
 
 **Vikram Kushwaha**  
 Computer Science and Engineering Student
+
+---
